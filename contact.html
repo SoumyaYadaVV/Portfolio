@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="contact_form_holder">
+        <form action="process_contact_form.php" method="post" id="contact_form">
+            <h2>Contact Us</h2>
+            <div><input class="contact_name" type="text" name="name" placeholder="Your Name" required></div>
+            <div><input class="contact_email" type="email" name="email" placeholder="Your Email" required></div>
+            <div><input class="contact_subject" type="text" name="subject" placeholder="Subject" required></div>
+            <div><textarea class="contact_message" name="message" placeholder="Your Message" required></textarea></div>
+            <div id="mail_success" class="success"></div>
+            <div id="mail_fail" class="error"></div>
+            <div id="cf_submit_p">
+                <input class="submit" type="submit" value="Send Message">
+            </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
